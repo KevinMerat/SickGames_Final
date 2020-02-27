@@ -1,0 +1,162 @@
+
+/*Catalogo juegos*/
+hr{
+    width: 100%;
+    margin-top: 0.3em;
+    margin-bottom: 0.1rem;
+    border: 1px solid white;
+    background: white;
+}
+#filaCatalogo{
+    padding-bottom: 20px;
+}
+#filaCatalogo .column{
+    width: calc(100%/4 - 35px);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    position: relative;
+}
+@media (max-width:1050px){
+    #filaCatalogo .column{
+        width: calc(100%/3 - 35px);
+    }
+}
+@media (max-width:770px){
+    #filaCatalogo .column{
+        width: calc(100%/2 - 35px);
+    }
+}
+@media (max-width:600px){
+    #filaCatalogo .column{
+        width: calc(100%/2 - 35px);
+    }
+}
+/*PAGINACIÓ*/
+.page-link{
+    background-color: black !important;
+    border-color: transparent !important;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+    border-radius: 200px 0px 200px 79px !important;
+    -moz-border-radius: 200px 0px 200px 79px !important;
+    -webkit-border-radius: 200px 0px 200px 79px !important;
+    margin: 2px;
+    margin-top:15px;
+}
+.page-link:hover{
+    color:black;
+    background-color: #4596F0 !important;
+}
+/* Menu lateral i body cataleg */ 
+.col-md-3{
+    max-width: 20% !important;
+}
+.col-md-9{
+    min-width: 80% !important;
+}
+.container-fluid .row{
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+.menuPlataforma{
+    display:block;
+    left:30px;
+    margin-top: 20px;
+}
+.section-body .row{
+    margin-right: 0px; 
+    overflow: hidden;
+}
+
+#marginMenuCalaleg{
+    max-width: 170px;
+    margin-bottom: 15px;
+    padding: 0px; 
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+[id*=escollir]{
+    width: 100%;
+    border-radius: 0px !important;
+}
+[class*=mostrar]{
+    display:none;
+}
+.checkboxDiv{
+    margin-top:10px;
+    margin-left:10px;
+}
+label{
+    margin-bottom: 0px;
+}
+input[type=checkbox]{
+    position:absolute;
+    left: 130px;
+    transform: scale(1.5);
+    margin-top: 6px;
+}
+#formLeft{
+    width: 5px;
+    float:left;
+}
+#formRight{
+}
+.btn:focus{
+    outline: none !important;
+}
+@media (max-width:1000px){
+    .menuPlataforma{
+        padding: 2px
+    }
+    
+}
+@media (max-width:767px){
+    .container-fluid .row{
+        margin-left: 0px;
+    }
+    hr{
+        display: none;
+    }
+    .section-body .row{
+        margin-right: 0px; 
+        overflow: visible;
+    }
+    .menuPlataforma{
+        display:block;
+        left:30px;
+        border:none;
+        min-width: fit-content;
+    }
+    [class*=mostrar]{
+        margin-top: 10px;
+    }
+    #marginMenuCalaleg{
+        margin-bottom: 15px;
+        padding: 0px; 
+        max-width: 230px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    [id*=escollir]{
+        width: 185px;
+        border-radius: 0px !important;
+    }
+    input[type=checkbox]{
+        position:relative;
+        left: 145px;
+        transform: scale(1.5);
+        margin-top: 6px;
+    }
+    .checkboxDiv{
+        margin-top:10px;
+        margin-left:5px;
+    }
+}
